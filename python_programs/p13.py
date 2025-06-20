@@ -1,0 +1,2 @@
+"""Write a Python program to create a class representing a circle. Include methods to calculate its area and circumference.
+ Take radius of the circle as input from the user. Sample input 3 Sample output 28.274333882308138 18.84955592153876"""

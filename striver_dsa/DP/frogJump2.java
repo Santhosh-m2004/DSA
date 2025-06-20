@@ -30,7 +30,6 @@ public class frogJump2 {
                     minSteps = Math.min(minSteps, cost);
                 }
             }
-
             dp[i] = minSteps;
         }
 

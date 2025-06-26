@@ -33,7 +33,6 @@ public class intersection{
     }
 
     public static void main(String[] args) {
-        // Create first linked list: 1 -> 2 -> 3
         Node common = new Node(8);
         common.next = new Node(10);
 
@@ -42,10 +41,9 @@ public class intersection{
         headA.next.next = new Node(3);
         headA.next.next.next = common;
 
-        // Create second linked list: 6 -> 7 -> 8 -> 10
         Node headB = new Node(6);
         headB.next = new Node(7);
-        headB.next.next = common; // Point to same intersection
+        headB.next.next = common;
 
         Node result = getIntersectionNode(headA, headB);
         if (result != null) {

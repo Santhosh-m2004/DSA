@@ -1,16 +1,16 @@
 package Recursion;
 
 public class rough {
-    static void f(int n,int count){
-        if(count==n){
+    static void f(int n ){
+        if(n<1){
             return;
         }
-        System.out.println("Santhosh");
-        f(n,count+1);
+        
+        f(n-1);
+        System.out.println(n);
     }
     public static void main(String[] args) {
         int n=5;
-        int count=0;
-        f(n,count);
+        f(n);
     }
 }

@@ -52,7 +52,6 @@ public class add2LL {
         l2.next = new Node(6);
         l2.next.next = new Node(4);
 
-        // Adding the two lists
         Node result = add(l1, l2);
 
         System.out.print("Result: ");

@@ -1,9 +1,6 @@
 package linked_list;
 import java.util.*;  
 
-
-
-// Main Reverse class
 public class reverse_list {
     static class ListNode {
     int val;            
@@ -15,7 +12,6 @@ public class reverse_list {
     }
 }
 
-    // Function to reverse the linked list
     public static ListNode reverseList(ListNode head) {
         ListNode prev=null;
         ListNode cur=head;
@@ -28,7 +24,6 @@ public class reverse_list {
         return prev;
     }
 
-    // Helper function to print the linked list
     public static void printList(ListNode head) {
         ListNode temp = head;
         System.out.print("[");
@@ -43,7 +38,6 @@ public class reverse_list {
 
     }
 
-    // Main function to take dynamic input and test the reverse function
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String input=sc.nextLine().trim();

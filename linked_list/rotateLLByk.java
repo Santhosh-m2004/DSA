@@ -1,8 +1,6 @@
 package linked_list;
 import java.util.*;  
 
-
-
 public class rotateLLByk {
     static class ListNode {
     int val;            

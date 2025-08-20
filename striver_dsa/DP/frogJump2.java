@@ -23,12 +23,12 @@ public class frogJump2 {
             int minSteps = Integer.MAX_VALUE;
 
             // Try all jumps from 1 to k steps behind
-            for (int j = 1; j <= k; j++) {
-                if (i - j >= 0) {
-                    // Jump from i-j to i
-                    int cost = dp[i - j] + Math.abs(height[i] - height[i - j]);
-                    minSteps = Math.min(minSteps, cost);
-                }
+            for (int j = 1; j <= k && i - j >= 0; j++) {
+                
+                // Jump from i-j to i
+                int cost = dp[i - j] + Math.abs(height[i] - height[i - j]);
+                minSteps = Math.min(minSteps, cost);
+                
             }
             dp[i] = minSteps;
         }

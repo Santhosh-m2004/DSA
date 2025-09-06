@@ -1,7 +1,5 @@
 package graphs;
-
 import java.util.*;
-
 public class BFS {
     public static ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         ArrayList<Integer> bfs = new ArrayList<>();
@@ -23,7 +21,6 @@ public class BFS {
         }
         return bfs;
     }
-
     public static void main(String[] args) {
         int V = 5;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();

@@ -1,7 +1,5 @@
 package graphs;
-
 import java.util.*;
-
 public class DFS {
     public static void dfs(int node, boolean[] visited, ArrayList<ArrayList<Integer>> adj, ArrayList<Integer> result) {
         visited[node] = true;
@@ -24,7 +22,6 @@ public class DFS {
     public static void main(String[] args) {
         int V = 5;
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
-
         for (int i = 0; i < V; i++) {
             adj.add(new ArrayList<>());
         }
@@ -40,7 +37,6 @@ public class DFS {
         adj.get(4).add(2);
 
         ArrayList<Integer> dfsResult = dfsOfGraph(V, adj);
-
         for (int node : dfsResult) {
             System.out.print(node + " ");
         }

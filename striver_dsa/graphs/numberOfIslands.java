@@ -28,10 +28,7 @@ public class numberOfIslands {
                 int newRow = curRow + dRow[i];
                 int newCol = curCol + dCol[i];
 
-                if (newRow >= 0 && newRow < n &&
-                    newCol >= 0 && newCol < m &&
-                    visited[newRow][newCol] == 0 &&
-                    grid[newRow][newCol] == '1') {
+                if (newRow >= 0 && newRow < n && newCol >= 0 && newCol < m && visited[newRow][newCol] == 0 && grid[newRow][newCol] == '1') {
                     visited[newRow][newCol] = 1;
                     q.offer(new Container(newRow, newCol));
                 }

@@ -1,7 +1,6 @@
 package leetcode;
 import java.util.*;
 
-
 class l3461 {
     public static boolean hasSameDigits(String s) {
         String temp = s;

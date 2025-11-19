@@ -44,9 +44,8 @@ public class lt45 {
 
     public static void main(String[] args) {
 
-        // ******** TEST CASES ********
         int[] numsTrue  = {2, 3, 1, 1, 4}; // Expected: 2
-        int[] numsFalse = {1, 1, 1, 1};    // Expected: 3 (not really false case but second variation)
+        int[] numsFalse = {1, 1, 1, 1};    // Expected: 3 
 
         System.out.println("Test Case 1 -> " + jump(numsTrue));
         System.out.println("Test Case 2 -> " + jump(numsFalse));
